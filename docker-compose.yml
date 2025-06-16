@@ -1,0 +1,15 @@
+x-default-opts: &default-opts
+  restart: unless-stopped
+  tty: true
+  stdin_open: true
+  privileged: false
+  ipc: private
+
+services:
+  codynflux-webui:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: codynflux_webui
+    <<: *default-opts
+    network_mode: host

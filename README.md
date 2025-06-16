@@ -8,3 +8,17 @@
 </div>
 
 Codynflux WebUI 提供使用者友善的 Codynflux 服務界面
+
+## 快速啟動
+### 使用 Node.js + npm
+```bash
+git clone https://github.com/Codynflux/codynflux-webui.git
+cd codynflux-webui
+npm install && npm run build && npm run start
+```
+### 使用 Docker Compose
+```bash
+git clone https://github.com/Codynflux/codynflux-webui.git
+cd codynflux-webui
+docker compose up -d
+```
